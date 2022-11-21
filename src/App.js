@@ -145,6 +145,7 @@ export default function App() {
 
   //if no error, then add, close dialog, and display success
   function handleAdd() {
+    validateDescription();
     if (validateTitle() || validateDescription()) {
       return;
     } else {
